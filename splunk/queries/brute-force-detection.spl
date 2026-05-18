@@ -1,0 +1,13 @@
+# Brute Force Detection Rule
+# Author: Michael Isiuwa
+# Date: May 13, 2026
+# Description: Detects 3 or more failed login attempts from the same 
+# account within a 60-second window. Potential brute force attack.
+# EventCode 4625 = Windows Failed Logon
+# Severity: High
+
+index=main EventCode=4625 source="WinEventLog:Security"
+| bucket _time span=60s
+| stats count by _time, Account_Name
+| where count >= 3
+| sort -count
