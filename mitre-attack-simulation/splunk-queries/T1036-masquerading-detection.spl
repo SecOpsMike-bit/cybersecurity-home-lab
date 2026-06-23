@@ -1,0 +1,1 @@
+index=main source="WinEventLog:Microsoft-Windows-Sysmon/Operational" "svchost.exe" "Temp"
