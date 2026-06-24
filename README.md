@@ -42,7 +42,7 @@ Built a Windows 11 VM from scratch, instrumented it with Sysmon feeding Splunk, 
 - **Techniques:** PowerShell Execution (T1059.001), Scheduled Task Persistence (T1053.005), Masquerading (T1036.005)
 - **Tools:** Splunk Enterprise, Sysmon v15, Windows 11 VM, VirtualBox
 - **Key skills:** ATT&CK technique mapping, detection engineering, threat hunting, SPL query writing, incident reporting
-- 📄 [Threat Detection Report](mitre-attack-simulation/report/MITRE-ATT%26CK-Detection-Report.docx)
+- 📄 [Threat Detection Report](mitre-attack-simulation/report/MITRE-ATTACK-Detection-Report.pdf)
 - 🔍 [SPL Detection Queries](mitre-attack-simulation/splunk-queries/)
 - 📸 [Detection Screenshots](mitre-attack-simulation/screenshots/)
 
